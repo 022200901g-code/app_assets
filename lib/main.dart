@@ -22,7 +22,7 @@ class MainApp extends StatelessWidget {
                   height: 250.0,
                   width: 450.0,
                   child:  Image(
-                    image: AssetImage('assets/images/OIP.jpeg')
+                    image: AssetImage('assets/images/OIP.jpeg'),
                     ),
                 ),
                 SizedBox(
