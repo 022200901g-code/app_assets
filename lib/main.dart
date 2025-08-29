@@ -9,31 +9,32 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       title: 'Flutter demo',
       home: Scaffold(
         appBar: AppBar(
           title: const Text("Mostra Imagenes"),
-          ),
-          body: Center(
-            child: Column(
-              children:  [
-                SizedBox (
-                  height: 250.0,
-                  width: 450.0,
-                  child:  Image(
-                    image: AssetImage('assets/images/OIP.jpeg'),
-                    ),
+        ),
+        body: Center(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 250.0,
+                width: 450.0,
+                child: Image(
+                  image: AssetImage('assets/images/OIP.jpeg'),
                 ),
-                SizedBox(
-                  height: 250.0,
-                  width: 450.0,
-                  child: Image.network(
-                    'https://www.iagua.es/sites/default/files/styles/thumbnail-830x455/public/lago_portada.jpg?itok=ZIzNjtIQ'),
+              ),
+              SizedBox(
+                height: 250.0,
+                width: 450.0,
+                child: Image.network(
+                  'https://www.shutterstock.com/image-photo/mountains-under-mist-morning-amazing-260nw-1725825019.jpg',
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
+        ),
       ),
     );
   }
